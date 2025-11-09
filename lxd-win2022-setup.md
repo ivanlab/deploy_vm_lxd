@@ -316,3 +316,44 @@ TIP
 say "Listo."
 
 ```
+
+
+
+
+Correccion paso 4 a mano
+
+```bash
+# 1) Crear VM vacía
+lxc init --empty win2022 --vm
+
+# 2) Recursos
+lxc config set win2022 limits.cpu 4
+lxc config set win2022 limits.memory 8GiB
+
+# 3) Disco raíz (pool=default) y NIC
+lxc config device add win2022 root disk pool=default size=60GiB path=/
+lxc config device add win2022 eth0 nic network=lxdbr0 name=eth0
+
+# 4) Permisos AppArmor (lectura/lock de ISOs en snap)
+lxc config set win2022 raw.apparmor '
+  /var/snap/lxd/common/lxd/disks/** rk,
+  /var/lib/snapd/hostfs/etc/ssl/openssl.cnf r,
+'
+
+# 5) Adjuntar ISO de Windows como CD
+lxc config device add win2022 winiso disk \
+  source=/var/snap/lxd/common/lxd/disks/Windows_Server_2022.iso \
+  boot.priority=10
+
+# 6) Adjuntar VirtIO como USB-CD para evitar conflictos de bus
+lxc config set win2022 raw.qemu -- "\
+ -device qemu-xhci,id=usbbus \
+ -drive if=none,id=usbd,media=cdrom,readonly=on,file=/var/snap/lxd/common/lxd/disks/virtio-win.iso,file.locking=off \
+ -device usb-storage,drive=usbd,bus=usbbus.0"
+
+# 7) Desactivar Secure Boot para la instalación
+lxc config set win2022 security.secureboot false
+
+# 8) Arrancar
+lxc start win2022
+```
