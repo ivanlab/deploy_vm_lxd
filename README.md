@@ -52,7 +52,7 @@ Pasos para conectarse a la VM **Windows 2022 desde macOS** mediante Microsoft Re
 
 ## 🧠 Arquitectura
 
-### 🧩 [architecture.png](./architecture.png)
+### 🧩 [architecture2.png](./architecture.png)
 Diagrama del entorno de red:
 - Host Ubuntu con interfaces `eth0` y `lxdbr0`.
 - VM Windows + Contenedores Linux en bridge interno.
