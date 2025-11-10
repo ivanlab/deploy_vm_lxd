@@ -59,6 +59,8 @@ Tu red `lxdbr0` está **NATeada**, lo que significa:
 
 ## ✅ 3. Soluciones posibles
 
+mejor ssh y opcion 2
+
 ### 🅰️ Opción 1 — Redirigir el puerto RDP con un *proxy device* (recomendada)
 
 En el **host Ubuntu**, ejecuta:
@@ -101,7 +103,7 @@ Tu VM Windows obtendrá una IP de tu red física (por ejemplo `10.0.0.x`) y podr
 Mantiene el aislamiento y solo abre acceso temporal desde tu Mac:
 
 ```bash
-ssh -L 3389:10.191.69.218:3389 azureuser@10.0.0.4
+ssh -L 3389:10.191.69.218:3389 -i VM-ware_key.pem azureuser@20.81.233.96 -v
 ```
 
 Después, abre **Microsoft Remote Desktop** y conecta a:
