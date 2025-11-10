@@ -61,7 +61,7 @@ Diagrama del entorno de red:
 ---
 
 ## 📌 Estructura Recomendada
-
+```
 DEPLOY_VM_LXD/
 ├── access_windows_from_mac.md
 ├── architecture.png
@@ -71,7 +71,7 @@ DEPLOY_VM_LXD/
 ├── LXD-NAT-Restore.md
 ├── lxd-win2022-setup.md
 └── README.md  ← (este archivo)
-
+```
 ---
 
 ## ⚙️ Notas finales
