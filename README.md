@@ -5,6 +5,17 @@ El entorno se ejecuta sobre **Ubuntu en Azure**, con adaptaciones específicas p
 
 ---
 
+## 🧠 Arquitectura
+
+### 🧩 [architecture.png](./architecture2.png)
+Diagrama del entorno de red:
+- Host Ubuntu con interfaces `eth0` y `lxdbr0`.
+- VM Windows + Contenedores Linux en bridge interno.
+- NAT saliente y DNAT entrante controlados por `nftables`.
+
+---
+
+
 ## 📖 Documentación Principal
 
 ### 🪟 [lxd-win2022-setup.md](./lxd-win2022-setup.md)
@@ -47,16 +58,6 @@ Guía rápida para verificar el acceso y estado del panel **LXD Web UI**, útil 
 
 ### 🌍 [access_windows_from_mac.md](./access_windows_from_mac.md)
 Pasos para conectarse a la VM **Windows 2022 desde macOS** mediante Microsoft Remote Desktop, con configuración de certificado opcional y resolución de problemas comunes.
-
----
-
-## 🧠 Arquitectura
-
-### 🧩 [architecture2.png](./architecture.png)
-Diagrama del entorno de red:
-- Host Ubuntu con interfaces `eth0` y `lxdbr0`.
-- VM Windows + Contenedores Linux en bridge interno.
-- NAT saliente y DNAT entrante controlados por `nftables`.
 
 ---
 
