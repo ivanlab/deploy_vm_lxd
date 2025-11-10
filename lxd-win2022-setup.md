@@ -180,13 +180,13 @@ Desde el ISO VirtIO (ahora montado): - **Red:** `NetKVM\w10\amd64` -
 
 ## ✅ Resumen final
 
-  Componente                Estado
-  ------------------------- -----------------------------------------
-  ISO Windows Server 2022   ✅ Montado como CDROM
-  ISO VirtIO                ✅ Montado por USB
-  AppArmor                  ✅ Configurado con permisos `rk`
-  Instalador                ✅ Detecta controladora `vioscsi`
-  Consola Web               ✅ Accesible desde Mac sin dependencias
+  |Componente|Estado|
+|---|---|
+|ISO Windows Server 2022 |  ✅ Montado como CDROM |
+|ISO VirtIO              |  ✅ Montado por USB|
+|AppArmor                |  ✅ Configurado con permisos `rk`|
+|Instalador              |  ✅ Detecta controladora `vioscsi`|
+|Consola Web             |  ✅ Accesible desde Mac sin dependencias|
 
 
 ```bash
