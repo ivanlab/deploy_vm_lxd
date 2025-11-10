@@ -60,7 +60,7 @@ Diagrama del entorno de red:
 
 ---
 
-## 📌 Estructura Recomendada
+## 📌 Estructura Repo
 ```
 DEPLOY_VM_LXD/
 ├── access_windows_from_mac.md
