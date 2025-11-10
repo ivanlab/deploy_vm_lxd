@@ -92,7 +92,7 @@ lxc config set win2022 raw.qemu -- "\
 
 # 7) Desactivar Secure Boot para la instalación
 lxc config set win2022 security.secureboot false
-
+```
 
 
 ------------------------------------------------------------------------
