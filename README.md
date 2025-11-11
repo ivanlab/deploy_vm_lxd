@@ -75,6 +75,10 @@ DEPLOY_VM_LXD/
 ```
 ---
 
+## Acceso (No en Github...)
+### 🌍 [acceso](./access.md)
+
+
 ## ⚙️ Notas finales
 
 - Todo el despliegue está optimizado para entornos **Ubuntu + LXD (snap)**.  
