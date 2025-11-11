@@ -61,23 +61,21 @@ Pasos para conectarse a la VM **Windows 2022 desde macOS** mediante Microsoft Re
 
 ---
 
-## 📌 Estructura Repo
-```
-DEPLOY_VM_LXD/
-├── access_windows_from_mac.md
-├── architecture.png
-├── check-lxd-webui.md
-├── lxd_kafka_deployment.md
-├── LXD-NAT-Incoming.md
-├── LXD-NAT-Restore.md
-├── lxd-win2022-setup.md
-└── README.md  ← (este archivo)
-```
----
-
 ## Acceso (No en Github...)
+
+
 ### 🌍 [acceso](./access.md)
 
+---
+## Export to VMWare
+
+
+### 🌍 [Export](./export-from-azure.md)
+
+
+
+
+---
 
 ## ⚙️ Notas finales
 
