@@ -89,3 +89,6 @@ Pasos para conectarse a la VM **Windows 2022 desde macOS** mediante Microsoft Re
 — ChatGPT (coautor técnico invisible del repo 🧠💻)”
 
 ---
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClibZK8vNBZD0nKc+Ao6VHYj/EAR8TQVazs7NTOTKybt3gsYB9ijgX0EDJydmWAinA/LeBB2zZE+0LsAdVxKmuWoQlSD2kmDKE6BK+epJJhrnHCCMKMyKy63dMMj5EmA507RjLgJWlbxNsJD5M+eaq0MRgStHHio7SD9Zl5TQ/6ndCALZJVKLPF+hsPV8bJ+WKY67sgt88rUW1cQH9ADMMU9UcttutgSs9pH9FYupzVS4eu0wvKqUKSBSQBRbN/WKO7nU+zDLgKzrRZ4lBdy8kfPtlX7WZdTKDVivpIk8WhJXJoxRjQNEIR3tkgespudbZv7je1W16bIKo47wYkAkV ivanlab@gmail.com
